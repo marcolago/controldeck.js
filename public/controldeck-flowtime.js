@@ -19,8 +19,13 @@ function messageHandler(message, a, b, c, d) {
     else if (message === 'prevSection')     	Flowtime.prevSection();
     else if (message === 'prevSection(true)')	Flowtime.prevSection(true);
     else if (message === 'nextSection')     	Flowtime.nextSection();
-    else if (message === 'nextSection(true)')	Flowtime.nextSection(true);
-    else if (message === 'overview')      		Flowtime.toggleOverview(true);
+    else if (message === 'nextSection(true)')   Flowtime.nextSection(true);
+    else if (message === 'gotoHome')            Flowtime.gotoHome();
+    else if (message === 'gotoEnd')             Flowtime.gotoEnd();
+    else if (message === 'gotoTop')             Flowtime.gotoTop();
+    else if (message === 'gotoBottom')	        Flowtime.gotoBottom();
+    else if (message === 'overview')            Flowtime.toggleOverview(true);
+    else if (message === 'overview(false)')      		Flowtime.toggleOverview(false);
     else if (message === 'navigate')  			Flowtime.gotoPage(a,b);
 }
 

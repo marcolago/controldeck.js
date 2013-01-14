@@ -269,7 +269,7 @@ var Flowtime = (function ()
 		function _getNextSection(top, fos, io)
 		{
 			var sub = sp;
-			var toTop = top == !_sectionsSlideToTop;
+			var toTop = io == false ? (top == !_sectionsSlideToTop) : false;
 			if (fos == true && fragmentsArray[p][sp].length > 0 && fr[p][sp] < fragmentsArray[p][sp].length - 1 && toTop != true && io == false)
 			{
 				_showFragment(p, sp);
@@ -300,7 +300,7 @@ var Flowtime = (function ()
 		function _getPrevSection(top, fos, io)
 		{
 			var sub = sp;
-			var toTop = top == !_sectionsSlideToTop;
+			var toTop = io == false ? (top == !_sectionsSlideToTop) : false;
 			if (fos == true && fragmentsArray[p][sp].length > 0 && fr[p][sp] >= 0 && toTop != true && io == false)
 			{
 				_hideFragment(p, sp);

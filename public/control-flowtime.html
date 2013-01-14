@@ -17,24 +17,31 @@
         <div class="controls reveal">
             <div class="controls-row">
                 <div>
-                    <a href="#" data-command="prev(true)" class="btn"><span class="arrow arrow-u">Skip Fragments</span></a>
+                    <a href="#" data-command="gotoHome" class="btn"><span class="arrow arrow-u">Home</span></a>
+                </div>
+                <div>
+                    <a href="#" data-command="gotoEnd" class="btn"><span class="arrow arrow-u">End</span></a>
 				</div>
 				<div>
+                    <a href="#" data-command="prev(true)" class="btn"><span class="arrow arrow-u">Skip Fragments</span></a>
+                    <a href="#" data-command="gotoTop" class="btn"><span class="arrow arrow-u">▲▲</span></a>
                     <a href="#" data-command="prev" class="btn"><span class="arrow arrow-u">▲</span></a>
                 </div>
                 <div>
-                	<a href="#" data-command="prevSection" class="btn"><span class="arrow arrow-l">◀</span></a>
-                	<a href="#" data-command="nextSection" class="btn"><span class="arrow arrow-r">▶</span></a>
+                    <a href="#" data-command="prevSection" class="btn"><span class="arrow arrow-l">▲◀</span></a>
+                	<a href="#" data-command="prevSection(true)" class="btn"><span class="arrow arrow-l">◀</span></a>
+                    <a href="#" data-command="nextSection" class="btn"><span class="arrow arrow-r">▶</span></a>
+                	<a href="#" data-command="nextSection(true)" class="btn"><span class="arrow arrow-r">▶▲</span></a>
                 </div>
                 <div>
-                    <a href="#" data-command="next" class="btn"><span class="arrow arrow-d">▼</span></a>
-				</div>
-				<div>
                     <a href="#" data-command="next(true)" class="btn"><span class="arrow arrow-d">Skip Fragments</span></a>
+                    <a href="#" data-command="gotoBottom" class="btn"><span class="arrow arrow-u">▼▼</span></a>
+                    <a href="#" data-command="next" class="btn"><span class="arrow arrow-d">▼</span></a>
                 </div>
                 <div class="sep"></div>
                 <div>
-                    <a href="#" data-command="overview" class="btn btn-small">overview</a>
+                    <a href="#" data-command="overview" class="btn btn-small">Overview</a>
+                    <a href="#" data-command="overview(false)" class="btn btn-small">Go Here</a>
                 </div>
             </div>
         </div>
