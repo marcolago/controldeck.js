@@ -1,87 +1,82 @@
-<!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>controldeck.js</title>
-        <meta name="description" content="Control HTML5 Presentations with node.js">
-        <meta name="viewport" content="width=640">
-        
-        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Controldeck.js by marcolago</title>
 
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Controldeck.js</h1>
+        <p class="header">control html5 presentations with node.js</p>
 
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
-    </head>
-    <body>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/marcolago/controldeck.js/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/marcolago/controldeck.js/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/marcolago/controldeck.js">View On GitHub</a></li>
+        </ul>
 
-        <a href="https://github.com/dfcb/controldeck.js/">
-            <img style="position: fixed; top: 0; right: 0; border: 0; z-index: 11;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" alt="Fork me on GitHub" />
-        </a>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/marcolago">marcolago</a></p>
 
-        <header>
-            <div class="panel panel-dark">
-                <h1>controldeck.js</h1>
-            </div>
-            <h2>Control HTML5 Presentations <br />with node.js</h2>
-            <p>Created by <a href="http://twitter.com/johnpolacek">John Polacek</a>&nbsp; at Draftfcb Chicago<br />
-            <a href="https://twitter.com/johnpolacek" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @johnpolacek</a></p>
-            
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            <a href="https://github.com/dfcb/controldeck.js/archive/master.zip" class="btn btn-small">Download Zip</a>
-            <a href="http://controldeck.aws.af.cm" class="btn btn-small">View Demo</a>
-            <p class="intro">Use controldeck.js to run HTML5 presentation frameworks like deck.js, reveals.js and impress.js. Run locally or on a node.js server.</p>
-            <p><small><i>Note: the hosted demo is on a shared <a href="http://www.appfog.com/">appfog</a> instance, <br />so commands will be sent across all users browsing the slides.</i></small></p>
-        </header>
 
-        <section class="main">
-            <iframe width="450" height="253" src="http://www.youtube.com/embed/74VVh8z33vM" frameborder="0" allowfullscreen></iframe>
-            
-            <h3>Getting Started</h3>
-            <p>First, <a href="https://github.com/dfcb/controldeck.js/archive/master.zip">download the source</a>. Open up a terminal window, use npm to install the dependencies, then run the app.</p>
-            <p class="code"><code>npm install<br />node app</code></p>
-            <p>Go to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> to view the demo page.</p>
-            <p>Choose one of the demos and open the slides and controller links in separate windows. Push the buttons in the controller window to control the slides.</p>
+      </header>
+      <section>
+        <h1>controldeck.js</h1>
 
-            <h3>Make Your Own</h3>
-            <p>Create your own slide deck using one of the presentation frameworks. Embed the socket.io and controldeck-slide.js scripts at the bottom of the page, before the <code>&lt;/body&gt;</code> tag.</p>
-            <p class="code"><code>&lt;!-- controldeck.js --&gt;<br />
-&lt;script src="/socket.io/socket.io.js">&lt;/script&gt;<br />
-&lt;script src="/controldeck-slides.js">&lt;/script&gt;</code></p>
-            <p>Use the 2 button controller or create your own. Refer to the examples for how to do it. The code is  straightforward. The controller pages simply use Node.js and socket.io to pass along commands to the slides page.</p>
-            
-        </section>
+<h2>Control HTML5 Presentations with node.js</h2>
 
-        <footer>
-            <p>More from the <a href="http://dfcb.github.com/">dev group at Draftfcb Chicago</a> and <a href="http://johnpolacek.github.com/">John Polacek</a></p>
-            <ul>
-                <li><a href="http://johnpolacek.github.com/superscrollorama/">SuperScrollorama</a></li>
-                <li><a href="http://dfcb.github.com/Responsivator/">Responsivator</a></li>
-                <li><a href="http://dfcb.github.com/BigVideo.js/">BigVideo.js</a></li>
-            </ul>
-        </footer>
+<p>Created by <a href="http://twitter.com/johnpolacek">John Polacek</a></p>
 
-        <!-- 
-        Analytics to see how many people are visiting our project page.
-        Do not use this code on your site unless you want to show up on our Google Analytics account :)
-         -->
-        <script type="text/javascript">
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-34145020-1']);
-          _gaq.push(['_trackPageview']);
+<h3>Getting Started</h3>
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
-        </script>
+<p>First, <a href="https://github.com/dfcb/controldeck.js/archive/master.zip">download the source</a>. Open up a terminal window, install the dependencies, and run the app.</p>
 
-    </body>
+<div class="highlight"><pre><span class="nv">$ </span>npm install
+<span class="nv">$ </span>node app
+</pre></div>
+
+<p>Go to <a href="http://localhost:8080">http://localhost:8080</a> to view the demo page.</p>
+
+<p>Choose one of the demos and open the slides and controller links in separate windows. Push the buttons in the controller window to control the slides.</p>
+
+<h3>Make Your Own</h3>
+
+<p>Create your own slide deck using one of the presentation frameworks. Embed the socket.io and controldeck-slide.js scripts at the bottom of the page, before the <code>&lt;/body&gt;</code> tag.</p>
+
+<div class="highlight"><pre><span class="c">&lt;!-- controldeck.js --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/socket.io/socket.io.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/controldeck-slides.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</pre></div>
+
+<p>Use the 2 button controller or create your own. Refer to the examples for how to do it. The code is  straightforward. The controller pages simply use Node.js and socket.io to pass along commands to the slides page.</p>
+
+<hr><h3>Draftfcb Chicago</h3>
+
+<p>We are the development group at Draftfcb Chicago. If you want to work on big digital ideas for big brands, get in touch with us at <a href="mailto:devrecruiting@draftfcb.com">devrecruiting@draftfcb.com</a>.</p>
+
+<hr><p>The MIT License (MIT)
+Copyright © 2013 John Polacek</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
 </html>
